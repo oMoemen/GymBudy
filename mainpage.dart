@@ -96,10 +96,10 @@ class DayCard extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
-        margin: const EdgeInsets.only(bottom: 20.0), // Spacing between cards
+        margin: const EdgeInsets.only(bottom: 20.0),
         decoration: BoxDecoration(
-          color: Color3, // Dark gray background for cards
-          borderRadius: BorderRadius.circular(20), // Rounded corners
+          color: Color3,
+          borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withOpacity(0.3),
@@ -115,7 +115,7 @@ class DayCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(icon, size: 30, color: brandColor), // Icon on the left
+                  Icon(icon, size: 30, color: brandColor),
                   const SizedBox(width: 10),
                   Text(
                     day,
@@ -136,7 +136,7 @@ class DayCard extends StatelessWidget {
               Align(
                 alignment: Alignment.bottomRight,
                 child: Icon(
-                  Icons.arrow_forward_ios, // The ">" icon
+                  Icons.arrow_forward_ios,
                   size: 20,
                   color: brandColor,
                 ),
